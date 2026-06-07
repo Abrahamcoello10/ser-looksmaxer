@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Rutina para ser looksmaxer</title>
+
+<style>
+    body{
+        background: #eefcff;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .contenedor{
+        width: 500px;
+        background: white;
+        border: 5px solid #4fc3f7;
+        border-radius: 20px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    }
+
+    h1{
+        color: #0288d1;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    h1:hover{
+        transform: scale(1.05);
+    }
+
+    ul{
+        text-align: left;
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    li{
+        margin: 12px 0;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h1 id="titulo" onclick="cambiarTitulo()">
+        Rutina para ser looksmaxer
+    </h1>
+
+    <ul>
+        <li>💧 Tomar 3 litros de agua.</li>
+        <li>🏋️ Entrenar 5-6 días a la semana.</li>
+        <li>🏃 Hacer cardio.</li>
+        <li>🤝 Ser humilde.</li>
+    </ul>
+
+</div>
+
+<script>
+function cambiarTitulo(){
+    document.getElementById("titulo").innerHTML =
+    "Para ser como Zeta 25 Max";
+}
+</script>
+
+</body>
+</html>
